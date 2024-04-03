@@ -1,15 +1,5 @@
-const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+const removeDuplicate = (array) => {
+  return [...new Set(array)];
+};
 
-function countVowels(inputWord) {
-  let numberOfVowels = new Number();
-  for (let i = 0; i < inputWord.length; i++) {
-    for (let j = 0; j < vowels.length; j++) {
-      if (inputWord[i] == vowels[j]) {
-        numberOfVowels++;
-      }
-    }
-  }
-  return numberOfVowels;
-}
-
-console.log(countVowels("Amaan"));
+console.log(removeDuplicate([1, 2, 2, 3, 4, 5, 5, 5, 6])); // output: [1, 2, 3, 4, 5, 6]
