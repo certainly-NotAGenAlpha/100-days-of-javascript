@@ -1,3 +1,7 @@
-const str = ["abc", "string"]
+const myArray = [];
 
-console.log(str[1][0]);
+const appendToArray = (item) => {
+  while (myArray.length <= 5) {
+    myArray.push(item);
+  }
+};
